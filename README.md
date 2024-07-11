@@ -13,7 +13,7 @@
 
 > WebsiteSearchTool
 
-```
+```python
 from crewai_tools import WebsiteSearchTool
 
 # Example of initiating tool that agents can use to search across any discovered websites
@@ -25,7 +25,7 @@ tool = WebsiteSearchTool(website='https://example.com')
 
 > YoutubeVideoSearchTool
 
-```
+```python
 from crewai_tools import YoutubeVideoSearchTool
 
 # General search across Youtube content without specifying a video URL, so the agent can search within any Youtube video content it learns about irs url during its operation
@@ -37,7 +37,7 @@ tool = YoutubeVideoSearchTool(youtube_video_url='https://youtube.com/watch?v=exa
 
 > GithubSearchTool
 
-```
+```python
 from crewai_tools import GithubSearchTool
 
 # Initialize the tool for semantic searches within a specific GitHub repository
@@ -56,7 +56,7 @@ tool = GithubSearchTool(
 
 > PDFSearchTool
 
-```
+```python
 from crewai_tools import PDFSearchTool
 
 # Initialize the tool allowing for any PDF content search if the path is provided during execution
@@ -70,7 +70,7 @@ tool = PDFSearchTool(pdf='path/to/your/document.pdf')
 
 > ScrapeWebsiteTool
 
-```
+```python
 from crewai_tools import ScrapeWebsiteTool
 
 # To enable scrapping any website it finds during it's execution
@@ -87,7 +87,7 @@ print(text)
 
 > ComposioTool : https://docs.composio.dev/introduction/intro/overview
 
-```
+```python
 from composio import App
 from crewai_tools import ComposioTool
 from crewai import Agent, Task
@@ -99,7 +99,7 @@ tools = [ComposioTool.from_action(action=Action.GITHUB_ACTIVITY_STAR_REPO_FOR_AU
 
 > SeleniumScrapingTool
 
-```
+```python
 from crewai_tools import SeleniumScrapingTool
 
 # The SeleniumScrapingTool is crafted for high-efficiency web scraping tasks. It allows for precise extraction of content from web pages by using CSS selectors to target specific elements. Its design caters to a wide range of scraping needs, offering flexibility to work with any provided website URL.
